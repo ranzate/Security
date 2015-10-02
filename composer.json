@@ -1,5 +1,5 @@
 {
-    "name": "ranzate/Security",
+    "name": "ranzate/security",
     "description": "Security plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
