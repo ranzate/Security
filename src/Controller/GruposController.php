@@ -49,7 +49,8 @@ class GruposController extends AppController
             'contain' => ['Acoes']
             ]);
         $acoes = $this->Grupos->Acoes->find('list', ['limit' => 200]);
-        $this->set(compact('title', 'grupo', 'acoes', 'modulos'));
+        $empresas = $this->Grupos->Empresas->find('list');
+        $this->set(compact('title', 'grupo', 'acoes', 'modulos', 'empresas'));
         $this->set('_serialize', ['grupo']);
         $this->render('form');
     }
@@ -76,7 +77,8 @@ class GruposController extends AppController
         $acoes = $this->Grupos->Acoes->find('list', ['limit' => 200]);
         $modulos = TableRegistry::get('Security.Modulos');
         $modulos = $modulos->getAcoesModulo();
-        $this->set(compact('title', 'grupo', 'acoes', 'modulos'));
+        $empresas = $this->Grupos->Empresas->find('list');
+        $this->set(compact('title', 'grupo', 'acoes', 'modulos', 'empresas'));
         $this->set('_serialize', ['grupo']);
         $this->render('form');
     }
@@ -107,7 +109,8 @@ class GruposController extends AppController
         $acoes = $this->Grupos->Acoes->find('list', ['limit' => 200]);
         $modulos = TableRegistry::get('Security.Modulos');
         $modulos = $modulos->getAcoesModulo();
-        $this->set(compact('title', 'grupo', 'acoes', 'modulos'));
+        $empresas = $this->Grupos->Empresas->find('list');
+        $this->set(compact('title', 'grupo', 'acoes', 'modulos', 'empresas'));
         $this->set('_serialize', ['grupo']);
         $this->render('form');
     }
