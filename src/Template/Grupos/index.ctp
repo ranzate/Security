@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="portlet-body">
-    <?= $this->element('Search\searchGrupos') ?>
+    <?= $this->element('Search' . DS . 'searchGrupos') ?>
         <table class="table table-striped table-bordered table-advance table-hover">
             <thead>
                 <tr>

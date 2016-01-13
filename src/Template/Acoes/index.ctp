@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="portlet-body">
-    <?= $this->element('Search\searchAcoes') ?>
+    <?= $this->element('Search' . DS . 'searchAcoes') ?>
         <table class="table table-striped table-bordered table-advance table-hover">
             <thead>
                 <tr>
